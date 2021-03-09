@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Claim free Waifus">
+    <meta name="description" content="Claim ZOMBIE NFT">
   
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -11,101 +11,78 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="apple-mobile-web-app-title" content="Waifu Faucet">
-    <meta name="application-name" content="Waifu Faucet">
+    <meta name="apple-mobile-web-app-title" content="ZOMBIE Faucet">
+    <meta name="application-name" content="ZOMBIE Faucet">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
     <!-- Social Cards -->
-    <meta name="twitter:title" content="Waifu Faucet" />
-    <meta name="twitter:description" content="Claim your own Waifu with Bitcoin Cash" />
-    <meta name="twitter:image" content="https://waifufaucet.com/img/social.jpg" />
-    <meta name="twitter:image:alt" content="The Waifu Faucet" />
+    <meta name="twitter:title" content="ZOMBIE Faucet" />
+    <meta name="twitter:description" content="Claim your own ZOMBIE NFT with Bitcoin Cash" />
+    <meta name="twitter:image" content="https://github.com/mazetoken/zombie-faucet/img/social.jpg" />
+    <meta name="twitter:image:alt" content="ZOMBIE Faucet" />
     <meta name="twitter:card" content="summary_large_image">
-    <meta property="og:url" content="https://waifufaucet.com" />
+    <meta property="og:url" content="https://zombienftfaucet.herokuapp.com" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Waifu Faucet" />
-    <meta property="og:description" content="Claim your own Waifu with Bitcoin Cash" />
-    <meta property="og:image" content="https://waifufaucet.com/img/social.jpg" />
-    <meta property="og:site_name" content="Waifu Faucet">
+    <meta property="og:title" content="ZOMBIE Faucet" />
+    <meta property="og:description" content="Claim your own ZOMBIE NFT with Bitcoin Cash" />
+    <meta property="og:image" content="https://github.com/mazetoken/zombie-faucet/img/social.jpg" />
+    <meta property="og:site_name" content="ZOMBIE Faucet">
 
-    <title>Waifu Faucet</title>
+    <title>ZOMBIE Faucet</title>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Mali:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles -->
     <link href="css/custom.css" rel="stylesheet">
-    <!-- Matomo -->
-    <script type="text/javascript">
-      var _paq = window._paq = window._paq || [];
-      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-      _paq.push(['trackPageView']);
-      _paq.push(['enableLinkTracking']);
-      (function() {
-        var u="//analytics.fountainhead.cash/";
-        _paq.push(['setTrackerUrl', u+'matomo.php']);
-        _paq.push(['setSiteId', '12']);
-        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-        g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-      })();
-    </script>
-    <!-- End Matomo Code -->
+    
     <script src="https://hcaptcha.com/1/api.js" async defer></script>
   </head>
   <body>
     <header class="masthead mb-auto bg-dark">
-        <div class="inner">
-          <nav class="nav nav-masthead justify-content-center">
-            <a class="nav-link" target="_blank" href="https://simpleledger.cash">Learn More</a>
-          </nav>
-        </div>
     </header>
     <main role="main">
       <div class="jumbotron text-center p-5">
-            <h1>Waifu Faucet</h1>
-        <p class="outline">The Waifu faucet is designed to bring awareness and circulation to the Waifu economy.</p>
-
+            <h1>ZOMBIE Faucet</h1>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         <form id="faucet-form" class="token-selector-form" action="/" method="post" >
           <% if(txid !== null){ %>
             <p>
-              Congratulations, please click on your new waifu<br>
-              <a href="https://simpleledger.info/#token/<%= txid %>"><img src="https://icons.waifufaucet.com/128/<%= txid %>.png"></a>
+              Congratulations, please click on your new ZOMBIE NFT and check its name if you dare:<br>
+              <a href="https://simpleledger.info/#token/<%= txid %>"><img src="https://nfticons.herokuapp.com/128/"></a>
             </p>
           <% } else { %>
-            <input name="address" type="text" placeholder="Enter your SLP address, ex: simpleledger:qp7l6ns2g…" required>
-            <div class="h-captcha" data-sitekey="d2fc47e8-23bc-468d-99a2-f4cd47ff257b"></div>
+          <br><br>
+            <input name="address" type="text" placeholder="Enter your SLP address, ex: simpleledger:qp7l6ns2g…" required><br>
+            <div class="h-captcha" data-sitekey="16714808-9597-4062-bc35-20d3658b7287"></div>
             <% if(error !== null){ %>
               <p>error: <%= error %></p>
             <% } %>
-            <p>Get your SLP address with <a href="https://simpleledger.cash/project/electron-cash-slp-edition/">Electron Cash SLP Edition</a>.</p>
-            <p><input id="submit-btn" type="submit" value="Claim free Waifu :)"></p>
+
+            <p>Get your SLP address with NFT compatible wallets:<br>
+            <a href="https://wallet.signup.cash">Signup wallet</a> , <a href="https://zapit.io">Zapit wallet</a> , <a href="https://simpleledger.cash/project/electron-cash-slp-edition/">Electron Cash SLP Edition</a></p><br>
+            <p><input id="submit-btn" type="submit" value="🧟 Claim ZOMBIE NFT 🧟"></p>
           <% } %>
         </form>
           <!-- end .token-selector-form -->
           
       <!-- end .jumbotron -->
+
+              <h3>ZOMBIE NFT Season 1:</h3>
+              <p>- 500 ZOMBIE NFTs<br>- 200 random ZOMBIE characters (token names)<br> - 20 random ZOMBIE hordes (token icons)</p><br>
+              ZOMBIE NFT-Group tokens are mineable (proof-of-work)<br>You can claim here ZOMBIE NFT child tokens every 3 hours<br><br>
+      ZOMBIE NFT by <a href="https://mazetoken.github.io">MAZE Token</a><br>
+      <a href="https://t.me/mazeslptoken">Telegram Group</a><br>
+      <a href="https://zombies.onuniverse.com">Zombiesite</a><br><br>
+      <a href="https://github.com/blockparty-sh/waifu_faucet">Source code</a><br>
+      <a href="https://simpleledger.cash">SLP resources</a><br><br>
+      <a href="https://juungle.net">Juungle SLP NFT Marketplace</a><br><br>
+      Special thanks to <a href="https://github.com/blockparty-sh">Blockparty-sh</a>
       
-      <div class="blurb bg-secondary p-5">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <h3>What is a waifu?!?</h3>
-              <div class="divider"></div>
-              <p>Waifu is a term for a 2d girl, usually in anime or related art style, that someone has immense, and sometimes overwhelming, affection for.</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <br>
-      <br>
-      <br>
-      <a href="https://t.me/waifuresearch">Waifu Research Telegram Group</a>
-      <br>
       <!-- end .blurb -->
       
       <!-- Bootstrap core JavaScript

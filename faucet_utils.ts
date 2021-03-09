@@ -3,8 +3,7 @@ import * as slpjs from "slpjs";
 import { BchdNetwork, BchdValidator } from "slpjs";
 import { BigNumber } from "bignumber.js";
 
-const firstNames = require('./jnames/female.json');
-const surNames = require('./jnames/surnames.json');
+const firstNames = require('./znames/znames.json');
 
 const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
@@ -48,8 +47,8 @@ export class FaucetUtils {
         const inputs = [burnUtxo, ...balances!.nonSlpUtxos] as slpjs.SlpAddressUtxoResult[];
         inputs.forEach((j) => j.wif = paymentAddressWif);
 
-        const name = firstNames[Math.floor(Math.random() * firstNames.length)] + " " + surNames[Math.floor(Math.random() * surNames.length)];
-        const ticker = process.env.NFTTICKER! || "SFNFT";
+        const name = firstNames[Math.floor(Math.random() * firstNames.length)] + " ";
+        const ticker = process.env.NFTTICKER! || "ZOMBIE";
         const documentUri: string|null = process.env.DOCUMENTURI || null;
         const documentHash: Buffer|null = process.env.DOCUMENTHASH ? Buffer.from(process.env.DOCUMENTHASH, 'hex') : null;
 

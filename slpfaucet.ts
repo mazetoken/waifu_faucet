@@ -14,7 +14,7 @@ export class SlpFaucetHandler {
     public addresses: string[];
     public wifs: { [key: string]: string };
     public network: BchdNetwork;
-    public currentFaucetAddressIndex = 4;
+    public currentFaucetAddressIndex = 0;
 
     private unconfirmedChainLength = new Map<string, number>();
     private blockHeight = 0;
@@ -109,7 +109,7 @@ export class SlpFaucetHandler {
     }
 
     public async selectFaucetAddressForTokens(tokenId: string): Promise<{ address: string, balance: slpjs.SlpBalancesResult }> {
-        this.currentFaucetAddressIndex = Math.floor(Math.random() * 18);
+        this.currentFaucetAddressIndex = Math.floor(Math.random() * 4);
         const addresses = this.addresses.filter((_, i) => i >= this.currentFaucetAddressIndex).map((a) => Utils.toCashAddress(a));
         for (let i = 0; i < addresses.length; i++) {
             if (this.unconfirmedChainLength.get(this.addresses[i])! > 49) {
@@ -143,7 +143,7 @@ export class SlpFaucetHandler {
             }
             console.log("Address index", this.currentFaucetAddressIndex, "has insufficient BCH to fuel token transaction, trying the next index.");
             console.log("-----------------------------------");
-            this.currentFaucetAddressIndex = (this.currentFaucetAddressIndex + 1) % 17
+            this.currentFaucetAddressIndex = (this.currentFaucetAddressIndex + 1) % 3
         }
         throw Error("There are no addresses with sufficient balance");
     }

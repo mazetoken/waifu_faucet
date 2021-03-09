@@ -1,3 +1,7 @@
+This version of SLP Faucet is prepared for ZOMBIE NFT
+
+-----------------------------------------------------
+
 # SLP Faucet Example
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/simpleledger/slp-faucet)
@@ -27,7 +31,7 @@ PORT=______
 
 ```
 $ npm i
-$ node server.js
+$ npm start
 ```
 
 ## Build Source

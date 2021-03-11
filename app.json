@@ -17,10 +17,6 @@
       "description": "The quantity of token to be distributed to each faucet visitor",
       "value": ""
     },
-    "NFT": {
-      "description": "Set: Yes",
-      "value": ""
-    },
     "DISTRIBUTE_SECRET": {
       "description": "The secret word used to initiate the faucet after you have funded one of the faucet's addresses with both Bitcoin Cash and your SLP token.  This will also need to be used when the faucet runs out of Bitcoin Cash or tokens.",
       "value": ""

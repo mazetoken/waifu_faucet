@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Claim ZOMBIE NFT">
+    <meta name="description" content="Zombie NFT faucet, Maze Token, simpleledger">
   
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -11,25 +11,20 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="apple-mobile-web-app-title" content="ZOMBIE Faucet">
-    <meta name="application-name" content="ZOMBIE Faucet">
+    <meta name="apple-mobile-web-app-title" content="ZOMBIE NFT faucet">
+    <meta name="application-name" content="ZOMBIE NFT faucet">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
     <!-- Social Cards -->
-    <meta name="twitter:title" content="ZOMBIE Faucet" />
-    <meta name="twitter:description" content="Claim your own ZOMBIE NFT with Bitcoin Cash" />
-    <meta name="twitter:image" content="https://github.com/mazetoken/zombie-faucet/img/social.jpg" />
-    <meta name="twitter:image:alt" content="ZOMBIE Faucet" />
-    <meta name="twitter:card" content="summary_large_image">
     <meta property="og:url" content="https://zombienftfaucet.herokuapp.com" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="ZOMBIE Faucet" />
+    <meta property="og:title" content="ZOMBIE NFT faucet" />
     <meta property="og:description" content="Claim your own ZOMBIE NFT with Bitcoin Cash" />
     <meta property="og:image" content="https://github.com/mazetoken/zombie-faucet/img/social.jpg" />
-    <meta property="og:site_name" content="ZOMBIE Faucet">
+    <meta property="og:site_name" content="ZOMBIE NFT faucet">
 
-    <title>ZOMBIE Faucet</title>
+    <title>ZOMBIE NFT faucet</title>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
@@ -47,13 +42,14 @@
     </header>
     <main role="main">
       <div class="jumbotron text-center p-5">
-            <h1>ZOMBIE Faucet</h1>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <h1>Zombie NFT</h1>
+            <p>Simple Zombie Protocol</p>
+            <p><img src="img/zombienft320.png"></p>
         <form id="faucet-form" class="token-selector-form" action="/" method="post" >
           <% if(txid !== null){ %>
             <p>
-              Congratulations, please click on your new ZOMBIE NFT and check its name if you dare:<br>
-              <a href="https://simpleledger.info/#token/<%= txid %>"><img src="https://nfticons.herokuapp.com/128/"></a>
+              Congratulations, please click on your new ZOMBIE NFT and check its name if you dare<br>
+              <a href="https://simpleledger.info/#token/<%= txid %>"><img src="https://nfticons.herokuapp.com/128/<%= txid %>.png"></a>
             </p>
           <% } else { %>
           <br><br>
@@ -63,8 +59,8 @@
               <p>error: <%= error %></p>
             <% } %>
 
-            <p>Get your SLP address with NFT compatible wallets:<br>
-            <a href="https://wallet.signup.cash">Signup wallet</a> , <a href="https://zapit.io">Zapit wallet</a> , <a href="https://simpleledger.cash/project/electron-cash-slp-edition/">Electron Cash SLP Edition</a></p><br>
+            <p>Get your address with SLP NFT compatible wallets:<br>
+            <a href="https://wallet.signup.cash">Signup</a> , <a href="https://zapit.io">Zapit</a> or <a href="https://simpleledger.cash/project/electron-cash-slp-edition/">Electron Cash SLP Edition</a></p><br>
             <p><input id="submit-btn" type="submit" value="🧟 Claim ZOMBIE NFT 🧟"></p>
           <% } %>
         </form>
@@ -72,16 +68,28 @@
           
       <!-- end .jumbotron -->
 
-              <h3>ZOMBIE NFT Season 1:</h3>
-              <p>- 500 ZOMBIE NFTs<br>- 200 random ZOMBIE characters (token names)<br> - 20 random ZOMBIE hordes (token icons)</p><br>
-              ZOMBIE NFT-Group tokens are mineable (proof-of-work)<br>You can claim here ZOMBIE NFT child tokens every 3 hours<br><br>
-      ZOMBIE NFT by <a href="https://mazetoken.github.io">MAZE Token</a><br>
+              <h3>ZOMBIE Faucet Season 1 (alpha season):</h3>
+              <p>- 750 ZOMBIE Non-Fungible Tokens<br>- 200 random ZOMBIE characters (token names)<br> - 25 random ZOMBIE hordes (token icons)<br>
+              *Parental Advisory Warning*</p><br>
+              You can claim every 4 hours<br>Don't cheat or zombies will eat you<br>
+              ZOMBIE NFT-Group tokens are mineable (proof-of-work)<br>You receive ZOMBIE child tokens<br><br>
+      <p>ZOMBIE NFT by <a href="https://mazetoken.github.io">MAZE Token</a><br>
       <a href="https://t.me/mazeslptoken">Telegram Group</a><br>
       <a href="https://zombies.onuniverse.com">Zombiesite</a><br><br>
       <a href="https://github.com/blockparty-sh/waifu_faucet">Source code</a><br>
-      <a href="https://simpleledger.cash">SLP resources</a><br><br>
-      <a href="https://juungle.net">Juungle SLP NFT Marketplace</a><br><br>
-      Special thanks to <a href="https://github.com/blockparty-sh">Blockparty-sh</a>
+      <a href="https://simpleledger.cash">Simple Ledger Protocol resources</a><br><br>
+      <a href="https://juungle.net">Juungle SLP NFT Marketplace</a><br>
+      Special thanks to <a href="https://github.com/blockparty-sh">Blockparty-sh</a></p>
+      <br><br>
+      Donations to zombie food (no animals will be harmed)<br>
+      <p><script src="https://unpkg.com/@paybutton/paybutton@^1.0/dist/paybutton.js"></script>
+         <div class="paybutton" to="bitcoincash:qrk3macg3sqhact07evk7u2hhq3el0plnul6fr4m5y"></div>
+      </p>
+      <br><br>
+      B_S_Z, 2021
+      <p><img src="img/maze320.png"></p>
+      <br><br>
+      Zombies eat cookies too
       
       <!-- end .blurb -->
       

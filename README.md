@@ -1,3 +1,15 @@
+# ZOMBIE SLP NFT Faucet
+
+zombie names and icons by B_S_Z
+
+faucet source code by James Cramer and JT Freeman (Bockparty-sh)
+
+Season 1 is over. 2300 ZOMBIE has been distributed
+
+See you in Season 2
+
+----------------------------------------------------------------------------------
+
 # SLP Faucet Example
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/simpleledger/slp-faucet)

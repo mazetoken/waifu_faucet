@@ -78,7 +78,7 @@ app.post("/", apiLimiter, async (req, res) => {
     } catch (e) {
         res.render("index", { txid: null, error: e.message });
         return;
-    }
+    }    
     
     let changeAddr: { address: string, balance: slpjs.SlpBalancesResult };
     try {

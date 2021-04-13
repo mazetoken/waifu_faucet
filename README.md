@@ -4,9 +4,9 @@ zombie names and icons by B_S_Z
 
 faucet source code by James Cramer and JT Freeman (Bockparty-sh)
 
-Season 1 is over. 2300 ZOMBIE has been distributed
+Season 1 is over. 2300 ZOMBIE NFT has been distributed
 
-See you in Season 2
+Season 2 - April 13. 2300 ZOMBIE NFT
 
 ----------------------------------------------------------------------------------
 
